@@ -14,7 +14,7 @@ theme:
   favicon: favicon.png
   logo: favicon.png
 
-site_authors: "Toni Drechsel, Christoph Vogel, Stefan Keulig, Alex Neumann"
+site_author: "Toni Drechsel, Christoph Vogel, Stefan Keulig, Alex Neumann"
 
 extra_css:
     - css/extra.css
