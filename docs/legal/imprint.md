@@ -2,9 +2,8 @@
 
 <h2>Projekt-Wiki</h2>
 
-für die Integration der MkDocs-Applikation als schulische IT-Projektorganisation  
-in den Unterricht im Lernfeld 8m am Berufliches Schulzentrum für Elektrotechnik Dresden. 
-</br>
+Wiki für die Integration der MkDocs-Applikation als schulische IT-Projektorganisation  
+in den Unterricht im Lernfeld 8 am Berufliches Schulzentrum für Elektrotechnik Dresden. 
 </br>
 </br>
 <h2>erstellt von:</h2>
@@ -22,4 +21,4 @@ BSZ Elektrotechnik Dresden
 01219 Dresden  
 Strehlener Platz 2
 
-*&copy; 2022*
+*&copy; 2023*
