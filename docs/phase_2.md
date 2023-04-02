@@ -29,4 +29,4 @@ installiert. → Link: [git-Tutorial](https://lerneprogrammieren.de/git/) sowie 
 
 [Link zu unserem Repository](https://github.com/ShaSo31/Projekt-IT-Installation)
 
-[Link zu unserer GitPage](https://shaso31.github.io/Projekt-IT-Installation) (funktioniert mit kostenloser Version wahrscheinlich nicht)
+[Link zu unserer GitPage](https://shaso31.github.io/Projekt-IT-Installation) (funktioniert wahrscheinlich nicht, da das repo von private auf public im Nachhinein umgestellt wurde)
