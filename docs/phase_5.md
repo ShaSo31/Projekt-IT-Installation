@@ -78,7 +78,7 @@
 * Außendienstangestellte, welche die Begehung des Objektes des Kunden durchführen
 * Innendienstangestellte, welche mit dem Projekt zu tun haben und die Software bedienen
 
-## Entscheidung für ein Datenformat für das Angebot
+## Entscheidung für das Datenformat für den Grundriss
 
 * verwendet werden soll ein BIM-Datenformat
 * BIM (Building Information Modeling) ist eine Methode, welche die Erstellung eines 3D-Modells von einem Bauwerk, sowie die Verwaltung aller damit verbundenen Informationen (wie z.B. Kosten, Zeit, thermische und akustische Eigenschaften usw.) ermöglicht
@@ -90,3 +90,10 @@
 * dies ist das am weitesten verbreitete nicht-proprietäre BIM-Format
 * es handelt sich um ein offenes und neutrales Dateiformat, das ein Modell eines Gebäudes oder Tragwerk enthält, einschließlich räumlicher Elemente, Materialien und Formen
 * das IFC-Dateiformat ist unabhängig von der verwendeten Software und kann von zahlreichen Programmen geöffnet werden.
+
+## Entscheidung für das Datenformat der Angebotserstellung
+
+* es wird ein Angebotsübersicht mit Hilfe der App erstellt
+* in dieser Übersicht werden alle IT-Komponenten aufgezählt und deren jeweiligen Kosten
+* das Ausgabeformat wird als PDF dargestellt, da der Kunde keine kostenpflichtige Software braucht, um die PDF zu lesen
+* außerdem kann das Angebot über E-Mail an den Kunden versendet werden
