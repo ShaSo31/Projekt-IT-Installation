@@ -10,19 +10,16 @@
 
 ## mögliche Beteiligte/Systeme
 
-Beteiligte:
-
-* Bearbeiter
-* Innendienstangestellter
-* Außendienstangestellter
-* Einkauf
-* Verkauf
-* Admin
-* Kunde
-
-System:
-
-* Angebotserstellung
+* Beteiligte:
+    * Bearbeiter
+    * Innendienstangestellter
+    * Außendienstangestellter
+    * Einkauf
+    * Verkauf
+    * Admin
+    * Kunde
+* Systeme:
+    * Angebotserstellung
 
 ## Vor- und Nachteile der Zielplattform
 
