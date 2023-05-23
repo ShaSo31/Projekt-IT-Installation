@@ -7,3 +7,8 @@
 * Entwerfen Sie eine Datenmodell, welches den gesamten Datenbestand Ihres Software-Systems abbildet. Hinweis: binäre Daten sind als BLOB handhabbar.
 
 ## Entwurf eines Datenmodells, welches den gesamten Datenbestand des Software-Systems abbildet
+
+* als relationales Datenbankmodell abgebildet mit [Dia als Open Source Programm](http://dia-installer.de/index.html.de)
+* kann beliebig erweitert werden, bspw. mit weiteren Hardware-Komponenten und deren Eigenschaften
+![relationales Datenbankmodell des Datenmodells](legal/images/relationales_Datenbankmodell_Datenmodell_Phase_8.png)
+* alternativ: Download der [Dia-Datei](legal/relationales_Datenbankmodell_Datenmodell_Phase_8.dia) oder als [PNG](legal/images/relationales_Datenbankmodell_Datenmodell_Phase_8.png)
