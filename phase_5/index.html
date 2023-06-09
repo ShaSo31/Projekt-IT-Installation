@@ -1,0 +1,733 @@
+
+<!doctype html>
+<html lang="de" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../phase_4/">
+      
+      
+        <link rel="next" href="../phase_6/">
+      
+      <link rel="icon" href="../favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+    
+    
+      
+        <title>Phase 5 - Projektdokumentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analyse-von-datenquellen-und-der-elektronischen-varianten" class="md-skip">
+          Zum Inhalt
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Kopfzeile">
+    <a href=".." title="Projektdokumentation" class="md-header__button md-logo" aria-label="Projektdokumentation" data-md-component="logo">
+      
+  <img src="../favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projektdokumentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Phase 5
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Suche" placeholder="Suche" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Suche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Zurücksetzen" aria-label="Zurücksetzen" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Suche wird initialisiert
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Projektdokumentation" class="md-nav__button md-logo" aria-label="Projektdokumentation" data-md-component="logo">
+      
+  <img src="../favicon.png" alt="logo">
+
+    </a>
+    Projektdokumentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Startseite
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_1/" class="md-nav__link">
+        Phase 1
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_2/" class="md-nav__link">
+        Phase 2
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_3/" class="md-nav__link">
+        Phase 3
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_4/" class="md-nav__link">
+        Phase 4
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Phase 5
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Phase 5
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufgabenstellung" class="md-nav__link">
+    Aufgabenstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifizierung-der-notwendigen-daten-als-voraussetzung-fur-die-angebotserstellung" class="md-nav__link">
+    Identifizierung der notwendigen Daten als Voraussetzung für die Angebotserstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyse-der-datenquellen-hinsichtlich-der-bereitstellerorte-und-moglicher-datenformate" class="md-nav__link">
+    Analyse der Datenquellen hinsichtlich der Bereitsteller/Orte und möglicher Datenformate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#untersuchung-der-datenformatedatenquellen-im-detail" class="md-nav__link">
+    Untersuchung der Datenformate/Datenquellen im Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Untersuchung der Datenformate/Datenquellen im Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#welche-daten-werden-dargestellt" class="md-nav__link">
+    Welche Daten werden dargestellt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-werden-daten-in-den-datenquellen-dargestellt" class="md-nav__link">
+    Wie werden Daten in den Datenquellen dargestellt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-konnen-diese-importiert-und-sinnvoll-weiterverarbeitet-werden" class="md-nav__link">
+    Wie können diese importiert und sinnvoll weiterverarbeitet werden?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#welche-metainformationen-sind-zur-datenquelle-vorhanden" class="md-nav__link">
+    Welche Metainformationen sind zur Datenquelle vorhanden?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-wer-die-daten-innerhalb-der-itsystemhausdd-gmbh-nutzen-und-verarbeiten-darf" class="md-nav__link">
+    Entscheidung, wer die Daten innerhalb der ITSystemHausDD GmbH nutzen und verarbeiten darf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-fur-das-datenformat-fur-den-grundriss" class="md-nav__link">
+    Entscheidung für das Datenformat für den Grundriss
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-fur-das-datenformat-der-angebotserstellung" class="md-nav__link">
+    Entscheidung für das Datenformat der Angebotserstellung
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_6/" class="md-nav__link">
+        Phase 6
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_7/" class="md-nav__link">
+        Phase 7
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_8/" class="md-nav__link">
+        Phase 8
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../phase_9/" class="md-nav__link">
+        Phase 9
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../legal/imprint/" class="md-nav__link">
+        Impressum
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Inhaltsverzeichnis">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aufgabenstellung" class="md-nav__link">
+    Aufgabenstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifizierung-der-notwendigen-daten-als-voraussetzung-fur-die-angebotserstellung" class="md-nav__link">
+    Identifizierung der notwendigen Daten als Voraussetzung für die Angebotserstellung
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyse-der-datenquellen-hinsichtlich-der-bereitstellerorte-und-moglicher-datenformate" class="md-nav__link">
+    Analyse der Datenquellen hinsichtlich der Bereitsteller/Orte und möglicher Datenformate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#untersuchung-der-datenformatedatenquellen-im-detail" class="md-nav__link">
+    Untersuchung der Datenformate/Datenquellen im Detail
+  </a>
+  
+    <nav class="md-nav" aria-label="Untersuchung der Datenformate/Datenquellen im Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#welche-daten-werden-dargestellt" class="md-nav__link">
+    Welche Daten werden dargestellt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-werden-daten-in-den-datenquellen-dargestellt" class="md-nav__link">
+    Wie werden Daten in den Datenquellen dargestellt?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wie-konnen-diese-importiert-und-sinnvoll-weiterverarbeitet-werden" class="md-nav__link">
+    Wie können diese importiert und sinnvoll weiterverarbeitet werden?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#welche-metainformationen-sind-zur-datenquelle-vorhanden" class="md-nav__link">
+    Welche Metainformationen sind zur Datenquelle vorhanden?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-wer-die-daten-innerhalb-der-itsystemhausdd-gmbh-nutzen-und-verarbeiten-darf" class="md-nav__link">
+    Entscheidung, wer die Daten innerhalb der ITSystemHausDD GmbH nutzen und verarbeiten darf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-fur-das-datenformat-fur-den-grundriss" class="md-nav__link">
+    Entscheidung für das Datenformat für den Grundriss
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entscheidung-fur-das-datenformat-der-angebotserstellung" class="md-nav__link">
+    Entscheidung für das Datenformat der Angebotserstellung
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="analyse-von-datenquellen-und-der-elektronischen-varianten">Analyse von Datenquellen und der elektronischen Varianten</h1>
+<h2 id="aufgabenstellung">Aufgabenstellung</h2>
+<p><strong>In einer der verdienten Frühstückspausen unterhalten Sie sich mit einem Ihren Mitarbeitern über die schlechte Qualität der als Beispiel bereitgestellten Grundrisse auf Papier. Sie wundern sich, dass diese nicht elektronisch zur Verfügung stehen.</strong></p>
+<ul>
+<li>Identifizieren Sie notwendige Daten, die als Voraussetzung für die Angebotserstellung dienen.</li>
+<li>Analysieren Sie die Datenquellen hinsichtlich der Bereitsteller/Orte und möglicher Datenformate in denen diese bereitgestellt werden können.</li>
+<li>Untersuchen Sie die Datenformate/Datenquellen im Detail:<ul>
+<li>welche Daten werden dargestellt</li>
+<li>wie werden Daten in den Datenquellen dargestellt</li>
+<li>wie können diese importiert und sinnvoll weiterverarbeitet werden</li>
+<li>welche Metainformationen sind zur Datenquelle vorhanden</li>
+</ul>
+</li>
+<li>Entscheiden Sie, wer die Daten innerhalb der ITSystemHausDD GmbH nutzen und verarbeiten darf.</li>
+<li>Entscheiden Sie sich für ein Datenformat für das Angebot.</li>
+</ul>
+<h2 id="identifizierung-der-notwendigen-daten-als-voraussetzung-fur-die-angebotserstellung">Identifizierung der notwendigen Daten als Voraussetzung für die Angebotserstellung</h2>
+<ul>
+<li>persönliche Kundendaten (Name, Anschrift, Telefonnummer etc.)</li>
+<li>Raummaße (analog oder als Datei, dabei als Plan oder nur als Werte), wenn vorhanden, ansonsten angefertigte Skizzen des Außendienstmitarbeiters bei der Vorort-Begehung</li>
+<li>genaue Einordnung der benötigten IT-Komponenten</li>
+<li>bereits vorhandener Netzwerkplan, wenn es diesen gibt, ansonsten eine genaue Auflistung aller Geräte und deren Verkabelung</li>
+</ul>
+<h2 id="analyse-der-datenquellen-hinsichtlich-der-bereitstellerorte-und-moglicher-datenformate">Analyse der Datenquellen hinsichtlich der Bereitsteller/Orte und möglicher Datenformate</h2>
+<ul>
+<li>mögliche Bereitsteller:<ul>
+<li>Daten können direkt vom Kunden kommen (persönliche Kundendaten, Raummaße)</li>
+<li>Daten kommen vom Bauamt (Grundriss des Gebäudes)</li>
+<li>Daten kommen vom Außendienstmitarbeiter (Raummaße)</li>
+</ul>
+</li>
+<li>mögliche Orte:<ul>
+<li>direkte Speicherung der Daten in einer Datei im Programm, was für Außendienstmitarbeiter geeignet ist, da diese eventuell keinen Zugriff auf die Datenbank haben (die Daten können später mit der Datenbank synchronisiert werden)</li>
+<li>Speicherung der Daten in einer Datenbank, mit der sich das Programm auf allen Geräten verbindet, um die gewünschten Informationen abzurufen</li>
+</ul>
+</li>
+<li>mögliche Datenformate:<ul>
+<li>Daten können als  fast jede Form eines Dateiformates (CSV-Datei, PDF-Datei, XML-Datei, Excel-Tabelle etc.) vorhanden sein</li>
+<li>Daten können auch bereits im CAD- oder BIM-Format abgespeichert sein</li>
+</ul>
+</li>
+</ul>
+<h2 id="untersuchung-der-datenformatedatenquellen-im-detail">Untersuchung der Datenformate/Datenquellen im Detail</h2>
+<h3 id="welche-daten-werden-dargestellt">Welche Daten werden dargestellt?</h3>
+<ul>
+<li>persönliche Kundendaten (Metainformation)</li>
+<li>weitere Metainformationen zur Datenquelle (siehe weiter unten)</li>
+<li>Daten der IT-Komponenten</li>
+<li>Raumpläne (vor allem Maße der Räume)</li>
+<li>Gesamtnetzwerkplan</li>
+</ul>
+<h3 id="wie-werden-daten-in-den-datenquellen-dargestellt">Wie werden Daten in den Datenquellen dargestellt?</h3>
+<ul>
+<li>Daten vom Kunden oder Bauamt:<ul>
+<li>können in den bereits erwähnten Datenformaten dargestellt werden </li>
+<li>jedoch könnten Daten auch in Papierform (handschriftlich oder gedruckt) als Grundriss des Gebäudes oder nur als Werte vorhanden sein</li>
+</ul>
+</li>
+<li>Daten in der Datenbank:<ul>
+<li>können als viele verschiedene Datentypen abgespeichert werden (INT, FLOAT, STRING, BLOB etc.)</li>
+<li>diese Datentypen können sich je nach verwendeter Datenbank unterscheiden</li>
+</ul>
+</li>
+<li>Daten in einer Datei des Programmes:<ul>
+<li>können als Text oder als Binärdatei gespeichert werden (viele verschiedene Datenformate sind möglich, wie XML, JSON etc. für gespeicherten Text)</li>
+</ul>
+</li>
+</ul>
+<h3 id="wie-konnen-diese-importiert-und-sinnvoll-weiterverarbeitet-werden">Wie können diese importiert und sinnvoll weiterverarbeitet werden?</h3>
+<ul>
+<li>analoge Datenformate in Papierform müssen in mühevoller Handarbeit in der Datenbank eingetragen werden, was dem Unternehmen in Rechnung gestellt wird (hoher Zeitaufwand)</li>
+<li>Dateien können besser verarbeitet werden, was jedoch vom genauen Datenformat abhängig ist<ul>
+<li>CSV-Dateien sind beispielsweise einfach in eine Datenbank einzupflegen, Excel-Tabellen und PDF-Dateien schon deutlich schwieriger (somit wird auch hier ein erhöhter Zeitaufwand benötigt)</li>
+<li>CAD- oder BIM-Dateien können eventuell in das genaue benötigte BIM-Format konvertiert werden (kommt auf das genaue Datenformat an und darauf, ob es ein proprietäres Datenformat, welches nur von zugelassene Softwares gelesen werden kann, ist oder nicht)</li>
+</ul>
+</li>
+</ul>
+<h3 id="welche-metainformationen-sind-zur-datenquelle-vorhanden">Welche Metainformationen sind zur Datenquelle vorhanden?</h3>
+<ul>
+<li>Kundendaten (Name, Adresse, Telefonnummer etc.)</li>
+<li>Raumhöhe, da zur Einfachheit nur 2D-Modelle erstellt werden sollen</li>
+<li>Hardwareinformationen (CPU, RAM, Gehäuse, Netzteil etc.)</li>
+<li>Informationen zur Verkabelung (verwendete Kabeltypen etc.)</li>
+<li>Kosten der IT-Komponenten</li>
+<li>Höchsttemperatur der Räume, in der sich die IT-Komponenten befinden</li>
+<li>Höchstluftfeuchtigkeit der Räume, in der sich die IT-Komponenten befinden</li>
+</ul>
+<h2 id="entscheidung-wer-die-daten-innerhalb-der-itsystemhausdd-gmbh-nutzen-und-verarbeiten-darf">Entscheidung, wer die Daten innerhalb der ITSystemHausDD GmbH nutzen und verarbeiten darf</h2>
+<ul>
+<li>Außendienstangestellte, welche die Begehung des Objektes des Kunden durchführen</li>
+<li>Innendienstangestellte, welche mit dem Projekt zu tun haben und die Software bedienen</li>
+</ul>
+<h2 id="entscheidung-fur-das-datenformat-fur-den-grundriss">Entscheidung für das Datenformat für den Grundriss</h2>
+<ul>
+<li>verwendet werden soll ein BIM-Datenformat</li>
+<li>BIM (Building Information Modeling) ist eine Methode, welche die Erstellung eines 3D-Modells von einem Bauwerk, sowie die Verwaltung aller damit verbundenen Informationen (wie z.B. Kosten, Zeit, thermische und akustische Eigenschaften usw.) ermöglicht</li>
+<li>deshalb müssen BIM-Dateien im Gegensatz zu CAD-Dateien (<a href="https://www.laserscanning-europe.com/de/news/uebersicht-von-cad-datenformaten">Übersicht über CAD-Datenformate</a>) die Möglichkeit bieten, über das 3D hinauszugehen und alle anderen Informationen des Projekts anzeigen (<a href="../legal/pdfs/MENISCAS_180_CAD-Modell.pdf">Beispiel eines CAD-Modells</a>)</li>
+<li>in unserem Fall müssen Kundendaten, Hardwareinformationen, Höchsttemperatur der Räume, in der sich die IT-Komponenten befinden, Kosten der IT-Komponenten etc. als Metadaten gespeichert werden</li>
+<li>verwendet werden soll ein offenes Dateiformat, denn diese sind Formate deren Struktur bekannt ist, und daher herstellerunabhängig sind</li>
+<li>dies bedeutet, dass sie von jeder Software gelesen und geändert werden können und somit die Interoperabilität fördern </li>
+<li>deswegen fiel die Entscheidung auf das Datenformat <strong>IFC (Industry Foundation Classes)</strong> (<a href="https://biblus.accasoftware.com/de/bim-dateien-die-wichtigsten-bim-formate-fuer-die-planung/">Übersicht über BIM-Datenformate</a>)</li>
+<li>dies ist das am weitesten verbreitete nicht-proprietäre BIM-Format</li>
+<li>es handelt sich um ein offenes und neutrales Dateiformat, das ein Modell eines Gebäudes oder Tragwerk enthält, einschließlich räumlicher Elemente, Materialien und Formen</li>
+<li>das IFC-Dateiformat ist unabhängig von der verwendeten Software und kann von zahlreichen Programmen geöffnet werden.</li>
+</ul>
+<h2 id="entscheidung-fur-das-datenformat-der-angebotserstellung">Entscheidung für das Datenformat der Angebotserstellung</h2>
+<ul>
+<li>es wird ein Angebotsübersicht mit Hilfe der Software erstellt</li>
+<li>in dieser Übersicht werden alle IT-Komponenten aufgezählt und deren jeweiligen Kosten</li>
+<li>das Ausgabeformat wird als PDF-Datei dargestellt, da der Kunde keine kostenpflichtige Software braucht, um die PDF-Datei zu lesen</li>
+<li>außerdem kann das Angebot über E-Mail an den Kunden versendet werden</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "In Zwischenablage kopiert", "clipboard.copy": "In Zwischenablage kopieren", "search.result.more.one": "1 weiteres Suchergebnis auf dieser Seite", "search.result.more.other": "# weitere Suchergebnisse auf dieser Seite", "search.result.none": "Keine Suchergebnisse", "search.result.one": "1 Suchergebnis", "search.result.other": "# Suchergebnisse", "search.result.placeholder": "Suchbegriff eingeben", "search.result.term.missing": "Es fehlt", "select.version": "Version ausw\u00e4hlen"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>
