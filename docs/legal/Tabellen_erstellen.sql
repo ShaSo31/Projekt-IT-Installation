@@ -1,9 +1,9 @@
 -- ####################################################################################################################
 -- #
--- # Erstellt die Tabellen fï¿½r die Kundendaten fï¿½r die Software der Angebotserstellung der ITSystemHausDD GmbH
+-- # Erstellt die Tabellen für die Kundendaten für die Software der Angebotserstellung der ITSystemHausDD GmbH
 -- # ------------------------------------------------------------------------------------------------------------- 
 -- #
--- # Benï¿½tigte Datenbanken:
+-- # Benötigte Datenbanken:
 -- # ----------------------
 -- # Software ITSystemHausDD GmbH
 -- #
@@ -37,13 +37,13 @@ CREATE TABLE Raum (
  [Raum_Id]                               INT IDENTITY(1, 1) PRIMARY KEY,
  [Kdnr.]                                 INT NOT NULL FOREIGN KEY REFERENCES [Kunde]([Kdnr.]),
  [BLOB]                                  VARBINARY(MAX),
- [Raumhï¿½he]                              DECIMAL(3,2)               
+ [Raumhöhe]                              DECIMAL(3,2)               
  );
 
 CREATE TABLE Metadaten (
  [Meta_ID]                               INT IDENTITY(1, 1) PRIMARY KEY,
  [Raum_ID]                               INT NOT NULL FOREIGN KEY REFERENCES [Raum]([Raum_Id]),
- [Hï¿½chsttemperatur]                      DECIMAL(2,2),               
+ [Höchsttemperatur]                      DECIMAL(2,2),               
  [Durchschnittstemperatur]               DECIMAL(2,2),
  [maximale Luftfeuchtigkeit]             DECIMAL(3,2),
  [durchschnittliche Luftfeuchtigkeit]    DECIMAL(3,2)
@@ -62,7 +62,7 @@ CREATE TABLE CPU_Einkauf (
 CREATE TABLE RAM_Einkauf (
  [RAM_Einkauf_ID]                        INT PRIMARY KEY,
  [Bezeichnung]                           VARCHAR(100) NOT NULL,
- [Speichergrï¿½ï¿½e]                         INT,
+ [Speichergröße]                         INT,
  [Taktfrequnez]                          INT,
  [Einkaufspreis]                         DECIMAL(4,2) NOT NULL,
  [Vorrat]                                INT NOT NULL
@@ -71,7 +71,7 @@ CREATE TABLE RAM_Einkauf (
 CREATE TABLE Festplatte_Einkauf (
  [Festplatte_Einkauf_ID]                 INT PRIMARY KEY,
  [Bezeichnung]                           VARCHAR(100) NOT NULL,
- [Grï¿½ï¿½e]                                 INT,
+ [Größe]                                 INT,
  [Baufaktor]                             VARCHAR(50),
  [Einkaufspreis]                         DECIMAL(4,2) NOT NULL,
  [Vorrat]                                INT NOT NULL
@@ -87,12 +87,12 @@ CREATE TABLE Netzteil_Einkauf (
  [Vorrat]                                INT NOT NULL
 ); 
 
-CREATE TABLE Gehï¿½use_Einkauf (
- [Gehï¿½use_Einkauf_ID]                    INT PRIMARY KEY,
+CREATE TABLE Gehäuse_Einkauf (
+ [Gehäuse_Einkauf_ID]                    INT PRIMARY KEY,
  [Bezeichnung]                           VARCHAR(100) NOT NULL,
  [Formfaktor]                            VARCHAR(50),
- [Lï¿½nge]                                 DECIMAL(3,2),
- [Hï¿½he]                                  DECIMAL(3,2),
+ [Länge]                                 DECIMAL(3,2),
+ [Höhe]                                  DECIMAL(3,2),
  [Breite]                                DECIMAL(3,2),
  [Einkaufspreis]                         DECIMAL(4,2) NOT NULL,
  [Vorrat]                                INT NOT NULL 
@@ -102,7 +102,7 @@ CREATE TABLE Verkabelung_Einkauf (
  [Verkabelung_Einkauf_ID]                INT PRIMARY KEY,
  [Bezeichnung]                           VARCHAR(100) NOT NULL,
  [Kabelart]                              VARCHAR(50),
- [Lï¿½nge]                                 DECIMAL(3,2),
+ [Länge]                                 DECIMAL(3,2),
  [Baufaktor]                             VARCHAR(50),
  [Datendurchsatz]                        DECIMAL(3,2),
  [Einkaufspreis]                         DECIMAL(4,2) NOT NULL,
@@ -141,9 +141,9 @@ CREATE TABLE Netzteil_Kauf (
  [Preis]                                 DECIMAL(5,2),
 );
 
-CREATE TABLE Gehï¿½use_Kauf (
- [Gehï¿½use_Kauf_ID]                       INT IDENTITY(1, 1) PRIMARY KEY,
- [Gehï¿½use_Einkauf_ID]                    INT NOT NULL FOREIGN KEY REFERENCES Gehï¿½use_Einkauf(Gehï¿½use_Einkauf_ID),
+CREATE TABLE Gehäuse_Kauf (
+ [Gehäuse_Kauf_ID]                       INT IDENTITY(1, 1) PRIMARY KEY,
+ [Gehäuse_Einkauf_ID]                    INT NOT NULL FOREIGN KEY REFERENCES Gehäuse_Einkauf(Gehäuse_Einkauf_ID),
  [Einzelpreis]                           DECIMAL(4,2),       
  [Menge]                                 INT,
  [Preis]                                 DECIMAL(5,2),
@@ -157,8 +157,8 @@ CREATE TABLE Verkabelung_Kauf (
  [Preis]                                 DECIMAL(5,2),
 );
 
-CREATE TABLE Gerï¿½t (
- [Gerï¿½t_ID]                              INT IDENTITY(1, 1) PRIMARY KEY,
+CREATE TABLE Gerät (
+ [Gerät_ID]                              INT IDENTITY(1, 1) PRIMARY KEY,
  [Raum_ID]                               INT NOT NULL FOREIGN KEY REFERENCES [Raum]([Raum_Id])
   ON UPDATE CASCADE
   ON DELETE CASCADE,
@@ -174,7 +174,7 @@ CREATE TABLE Gerï¿½t (
  [Netzteil_Kauf_ID]                      INT NOT NULL FOREIGN KEY REFERENCES [Netzteil_Kauf]([Netzteil_Kauf_ID])
   ON UPDATE CASCADE
   ON DELETE CASCADE,
- [Gehï¿½use_Kauf_ID]                       INT NOT NULL FOREIGN KEY REFERENCES [Gehï¿½use_Kauf]([Gehï¿½use_Kauf_ID])
+ [Gehäuse_Kauf_ID]                       INT NOT NULL FOREIGN KEY REFERENCES [Gehäuse_Kauf]([Gehäuse_Kauf_ID])
   ON UPDATE CASCADE
   ON DELETE CASCADE,
  [Verkabelung_Kauf_ID]                   INT NOT NULL FOREIGN KEY REFERENCES [Verkabelung_Kauf]([Verkabelung_Kauf_ID])
